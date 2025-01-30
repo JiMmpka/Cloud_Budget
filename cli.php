@@ -1,8 +1,13 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
 include __DIR__ . '/src/Framework/Database.php';
 
 use Framework\Database;
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // $db = new Database('mysql', [
 //     'host' => 'localhost',

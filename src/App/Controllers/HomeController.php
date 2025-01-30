@@ -5,14 +5,21 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use Framework\TemplateEngine;
-use App\Config\Paths;
+use App\Services\TransactionService;
 
 class HomeController
 {
-    public function __construct(private TemplateEngine $view) {}
+    public function __construct(
+        private TemplateEngine $view,
+        private TransactionService $transactionService
+    ) {}
 
     public function home()
     {
-        echo $this->view->render("index.php");
+        $transaction = $this->transactionService->getUsertransaction();
+
+        echo $this->view->render("index.php", [
+            'transactions' => $transaction
+        ]);
     }
 }
