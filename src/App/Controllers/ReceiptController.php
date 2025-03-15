@@ -38,6 +38,58 @@ class ReceiptController
 
         $this->receiptService->validateFiles($receiptFile);
 
+        $this->receiptService->upload($receiptFile, $transaction['id']);
+
         redirectTo("/");
+    }
+
+    public function download(array $params)
+    {
+        $transaction = $this->transactionService->getUserTransaction(
+            $params['transaction']
+
+        );
+
+        if (empty($transaction)) {
+            redirectTo('/');
+        }
+
+        $receipt = $this->receiptService->getReceipt($params['receipt']);
+
+        if (empty($receipt)) {
+            redirectTo('/');
+        }
+
+        if ($receipt['transaction_id'] !== $transaction['id']) {
+            redirectTo('/');
+        }
+
+        $this->receiptService->read($receipt);
+    }
+
+    public function delete(array $params)
+    {
+        $transaction = $this->transactionService->getUserTransaction(
+            $params['transaction']
+
+        );
+
+        if (empty($transaction)) {
+            redirectTo('/');
+        }
+
+        $receipt = $this->receiptService->getReceipt($params['receipt']);
+
+        if (empty($receipt)) {
+            redirectTo('/');
+        }
+
+        if ($receipt['transaction_id'] !== $transaction['id']) {
+            redirectTo('/');
+        }
+
+        $this->receiptService->delete($receipt);
+
+        redirectTo('/');
     }
 }
