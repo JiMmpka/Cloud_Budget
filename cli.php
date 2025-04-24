@@ -9,12 +9,6 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// $db = new Database('mysql', [
-//     'host' => 'localhost',
-//     'port' => 3306,
-//     'dbname' => 'phpiggy'
-// ], 'root', '');
-
 $db = new Database($_ENV['DB_DRIVER'], [
     'host' => $_ENV['DB_HOST'],
     'port' => $_ENV['DB_PORT'],
