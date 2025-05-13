@@ -1,5 +1,5 @@
 {
-    "name": "psajkowski/ph-piggy",
+    "name": "psajkowski/cloud-budget",
     "description": "A PHP application for tracking expenses.",
     "type": "project",
     "license": "MIT",
@@ -17,6 +17,6 @@
         ]
     },
     "scripts": {
-        "phpiggy": "php cli.php"
+        "cloud": "php cli.php"
     }
 }

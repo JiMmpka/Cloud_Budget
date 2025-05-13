@@ -1,0 +1,164 @@
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+  
+.text-small {
+  font-size: 85%;
+}
+
+.bg-primary {
+  background-color: transparent  !important;
+}
+  
+.text-bg-primary{
+    color: inherit !important;
+    background-color: transparent  !important;
+}
+
+body {
+  background: url('../images/clauds-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.btn-primary{
+  background-color: #e1b99f;
+  border-color: #e1b99f;
+}
+
+.nav-bg-color{
+  background-color: #e1b99f !important;
+  z-index: 1060;
+}
+
+.navbar{
+  height: 120px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.datepicker-modal .datepicker {
+  z-index: 1050;
+}
+
+.bottom-spacing {
+  padding: 30px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.modal-dialog {
+  max-width: 200px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+#modalDatepicker .datepicker-inline {
+    width: 100%;
+}
+
+.table-summary-color{
+  --bs-table-bg: #e1b99f;
+}
+
+.container-balanse {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.table {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .container {
+      padding: 15px;
+  }
+
+  .expenses-table {
+      margin-top: 30px;
+  }
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.error{
+  color:red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary{
+	background-color: #e1b99f;
+	border-color: #e1b99f;
+	}
+
+.btn-primary, .btn-secondary, .btn-outline-secondary {
+	--bs-btn-active-bg: #819da9 !important;
+	--bs-btn-active-border-color: #819da9 !important;
+	--bs-btn-hover-bg: #819da9 !important;
+	--bs-btn-hover-border-color: #819da9 !important;
+}
+
+.modal {
+	z-index: 1150;
+}
+
+.success-message{
+	font-size:1.2rem !important;
+}
+
+.modal-dimensions{
+	min-height: 110px !important;
+}
+
+#successMessage {
+	margin: 0;
+}
+
+.card{
+	background-color: rgb(255 255 255 / 80%) !important;
+}
+
+.card-header-font-size{
+	font-size:1.5rem;
+	font-weight:400;
+}
