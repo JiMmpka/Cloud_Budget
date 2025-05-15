@@ -76,35 +76,19 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
-                      <label class="form-check-label text-secondary" for="remember_me">
-                        Keep me logged in
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-12">
                     <div class="d-grid">
                       <button class="btn btn-primary btn-lg" type="submit">Log in now</button>
                     </div>
                   </div>
                 </div>
               </form>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end mt-4">
-                    <a href="#!">Forgot password</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
